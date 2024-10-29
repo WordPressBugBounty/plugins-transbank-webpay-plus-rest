@@ -4,7 +4,7 @@ Tags: transbank, webpay, oneclick, webpay plus, rest, chile
 Requires at least: 5.3
 Tested up to: 6.6.2
 Requires PHP: 7.4
-Stable tag: 1.9.2
+Stable tag: 1.9.3
 License: 3-Clause BSD License
 License URI: https://opensource.org/licenses/BSD-3-Clause
 
@@ -14,6 +14,10 @@ Recibe pagos en línea con tarjetas de crédito, débito y prepago en tu WooComm
 Recibe pagos en línea con tarjetas de crédito, débito y prepago en tu WooCommerce a través de Webpay Plus y Webpay Oneclick
 
 == Changelog ==
+= 1.9.3 =
+Esta versión no tiene cambios en el comportamiento de las funcionalidades de la API.
+* Se refina el flujo de pago de Oneclick.
+
 = 1.9.2 =
 Esta versión no tiene cambios en el comportamiento de las funcionalidades de la API.
 *Se refina el flujo de pago de Webpay y Oneclick.
@@ -173,6 +177,10 @@ Arreglado:
 * Initial release.
 
 == Upgrade Notice ==
+= 1.9.3 =
+Esta versión no tiene cambios en el comportamiento de las funcionalidades de la API.
+* Se refina el flujo de pago de Oneclick.
+
 = 1.9.2 =
 Esta versión no tiene cambios en el comportamiento de las funcionalidades de la API.
 *Se refina el flujo de pago de Webpay y Oneclick.

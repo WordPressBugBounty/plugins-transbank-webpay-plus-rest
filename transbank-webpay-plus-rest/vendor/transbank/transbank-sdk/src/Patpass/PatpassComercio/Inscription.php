@@ -8,7 +8,6 @@
 
 namespace Transbank\Patpass\PatpassComercio;
 
-use GuzzleHttp\Exception\GuzzleException;
 use Transbank\Patpass\PatpassComercio;
 use Transbank\Patpass\PatpassComercio\Exceptions\InscriptionStartException;
 use Transbank\Patpass\PatpassComercio\Exceptions\InscriptionStatusException;
@@ -42,7 +41,7 @@ class Inscription
      * @param $city
      *
      * @throws InscriptionStartException
-     * @throws GuzzleException
+     * @throws GuzzleHttp\Exception\GuzzleException
      *
      * @return InscriptionStartResponse
      */
@@ -86,7 +85,12 @@ class Inscription
         try {
             $response = $this->sendRequest('POST', $endpoint, $payload);
         } catch (WebpayRequestException $exception) {
-            throw InscriptionStartException::raise($exception);
+            throw new InscriptionStartException($exception->getMessage(),
+                $exception->getTransbankErrorMessage(),
+                $exception->getHttpCode(),
+                $exception->getFailedRequest(),
+                $exception
+            );
         }
 
         return new InscriptionStartResponse($response);
@@ -97,7 +101,7 @@ class Inscription
      * @param null $options
      *
      * @throws InscriptionStatusException
-     * @throws GuzzleException
+     * @throws GuzzleHttp\Exception\GuzzleException
      *
      * @return InscriptionStatusResponse
      */
@@ -112,7 +116,12 @@ class Inscription
         try {
             $response = $this->sendRequest('POST', $endpoint, $payload);
         } catch (WebpayRequestException $exception) {
-            throw InscriptionStatusException::raise($exception);
+            throw new InscriptionStatusException($exception->getMessage(),
+                $exception->getTransbankErrorMessage(),
+                $exception->getHttpCode(),
+                $exception->getFailedRequest(),
+                $exception
+            );
         }
 
         return new InscriptionStatusResponse($response);

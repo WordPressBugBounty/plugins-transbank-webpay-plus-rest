@@ -2,7 +2,6 @@
 
 namespace Transbank\Webpay\Modal;
 
-use GuzzleHttp\Exception\GuzzleException;
 use Transbank\Utils\InteractsWithWebpayApi;
 use Transbank\Webpay\Exceptions\WebpayRequestException;
 use Transbank\Webpay\Modal\Exceptions\TransactionCommitException;
@@ -30,7 +29,7 @@ class Transaction
      * @param int    $amount
      *
      * @throws TransactionCreateException
-     * @throws GuzzleException|TransactionCreateException
+     * @throws GuzzleHttp\Exception\GuzzleException|TransactionCreateException
      *
      * @return TransactionCreateResponse
      **
@@ -50,7 +49,12 @@ class Transaction
         try {
             $response = $this->sendRequest('POST', static::CREATE_TRANSACTION_ENDPOINT, $payload);
         } catch (WebpayRequestException $exception) {
-            throw TransactionCreateException::raise($exception);
+            throw new TransactionCreateException($exception->getMessage(),
+                $exception->getTransbankErrorMessage(),
+                $exception->getHttpCode(),
+                $exception->getFailedRequest(),
+                $exception
+            );
         }
 
         return new TransactionCreateResponse($response);
@@ -59,7 +63,7 @@ class Transaction
     /**
      * @param string $token
      *
-     * @throws TransactionCommitException|GuzzleException
+     * @throws TransactionCommitException|GuzzleHttp\Exception\GuzzleException
      *
      * @return TransactionCommitResponse
      **
@@ -71,7 +75,12 @@ class Transaction
         try {
             $response = $this->sendRequest('PUT', $endpoint, []);
         } catch (WebpayRequestException $exception) {
-            throw TransactionCommitException::raise($exception);
+            throw new TransactionCommitException($exception->getMessage(),
+                $exception->getTransbankErrorMessage(),
+                $exception->getHttpCode(),
+                $exception->getFailedRequest(),
+                $exception
+            );
         }
 
         return new TransactionCommitResponse($response);
@@ -80,7 +89,7 @@ class Transaction
     /**
      * @param $token
      *
-     * @throws GuzzleException
+     * @throws GuzzleHttp\Exception\GuzzleException
      * @throws TransactionStatusException
      *
      * @return TransactionStatusResponse
@@ -92,7 +101,12 @@ class Transaction
         try {
             $response = $this->sendRequest('GET', $endpoint, []);
         } catch (WebpayRequestException $exception) {
-            throw TransactionStatusException::raise($exception);
+            throw new TransactionStatusException($exception->getMessage(),
+                $exception->getTransbankErrorMessage(),
+                $exception->getHttpCode(),
+                $exception->getFailedRequest(),
+                $exception
+            );
         }
 
         return new TransactionStatusResponse($response);
@@ -103,7 +117,7 @@ class Transaction
      * @param $amount
      * @param Options|null $options
      *
-     * @throws GuzzleException|TransactionRefundException
+     * @throws GuzzleHttp\Exception\GuzzleException|TransactionRefundException
      *
      * @return TransactionRefundResponse
      */
@@ -118,7 +132,12 @@ class Transaction
                 ['amount' => $amount]
             );
         } catch (WebpayRequestException $exception) {
-            throw TransactionRefundException::raise($exception);
+            throw new TransactionRefundException($exception->getMessage(),
+                $exception->getTransbankErrorMessage(),
+                $exception->getHttpCode(),
+                $exception->getFailedRequest(),
+                $exception
+            );
         }
 
         return new TransactionRefundResponse($response);

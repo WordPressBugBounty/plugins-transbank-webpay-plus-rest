@@ -9,7 +9,7 @@ return array(
     'Transbank\\WooCommerce\\WebpayRest\\' => array($baseDir . '/src'),
     'Transbank\\Plugin\\' => array($baseDir . '/shared'),
     'Transbank\\' => array($vendorDir . '/transbank/transbank-sdk/src'),
-    'Psr\\Log\\' => array($vendorDir . '/psr/log/Psr/Log'),
+    'Psr\\Log\\' => array($vendorDir . '/psr/log/src'),
     'Psr\\Http\\Message\\' => array($vendorDir . '/psr/http-factory/src', $vendorDir . '/psr/http-message/src'),
     'Psr\\Http\\Client\\' => array($vendorDir . '/psr/http-client/src'),
     'Monolog\\' => array($vendorDir . '/monolog/monolog/src/Monolog'),

@@ -4,7 +4,7 @@
 
 namespace Composer\Autoload;
 
-class ComposerStaticInita3d675540e6e970dc31c4faf600d6eb0
+class ComposerStaticInitf6e1557513b25646ab1b95c528dcf2b9
 {
     public static $files = array (
         '7b11c4dc42b3b3023073cb14e519683c' => __DIR__ . '/..' . '/ralouphie/getallheaders/src/getallheaders.php',
@@ -13,23 +13,23 @@ class ComposerStaticInita3d675540e6e970dc31c4faf600d6eb0
     );
 
     public static $prefixLengthsPsr4 = array (
-        'T' => 
+        'T' =>
         array (
             'Transbank\\WooCommerce\\WebpayRest\\' => 33,
             'Transbank\\Plugin\\' => 17,
             'Transbank\\' => 10,
         ),
-        'P' => 
+        'P' =>
         array (
             'Psr\\Log\\' => 8,
             'Psr\\Http\\Message\\' => 17,
             'Psr\\Http\\Client\\' => 16,
         ),
-        'M' => 
+        'M' =>
         array (
             'Monolog\\' => 8,
         ),
-        'G' => 
+        'G' =>
         array (
             'GuzzleHttp\\Psr7\\' => 16,
             'GuzzleHttp\\Promise\\' => 19,
@@ -38,44 +38,44 @@ class ComposerStaticInita3d675540e6e970dc31c4faf600d6eb0
     );
 
     public static $prefixDirsPsr4 = array (
-        'Transbank\\WooCommerce\\WebpayRest\\' => 
+        'Transbank\\WooCommerce\\WebpayRest\\' =>
         array (
             0 => __DIR__ . '/../..' . '/src',
         ),
-        'Transbank\\Plugin\\' => 
+        'Transbank\\Plugin\\' =>
         array (
             0 => __DIR__ . '/../..' . '/shared',
         ),
-        'Transbank\\' => 
+        'Transbank\\' =>
         array (
             0 => __DIR__ . '/..' . '/transbank/transbank-sdk/src',
         ),
-        'Psr\\Log\\' => 
+        'Psr\\Log\\' =>
         array (
-            0 => __DIR__ . '/..' . '/psr/log/Psr/Log',
+            0 => __DIR__ . '/..' . '/psr/log/src',
         ),
-        'Psr\\Http\\Message\\' => 
+        'Psr\\Http\\Message\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/http-factory/src',
             1 => __DIR__ . '/..' . '/psr/http-message/src',
         ),
-        'Psr\\Http\\Client\\' => 
+        'Psr\\Http\\Client\\' =>
         array (
             0 => __DIR__ . '/..' . '/psr/http-client/src',
         ),
-        'Monolog\\' => 
+        'Monolog\\' =>
         array (
             0 => __DIR__ . '/..' . '/monolog/monolog/src/Monolog',
         ),
-        'GuzzleHttp\\Psr7\\' => 
+        'GuzzleHttp\\Psr7\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/psr7/src',
         ),
-        'GuzzleHttp\\Promise\\' => 
+        'GuzzleHttp\\Promise\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/promises/src',
         ),
-        'GuzzleHttp\\' => 
+        'GuzzleHttp\\' =>
         array (
             0 => __DIR__ . '/..' . '/guzzlehttp/guzzle/src',
         ),
@@ -88,9 +88,9 @@ class ComposerStaticInita3d675540e6e970dc31c4faf600d6eb0
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
-            $loader->prefixLengthsPsr4 = ComposerStaticInita3d675540e6e970dc31c4faf600d6eb0::$prefixLengthsPsr4;
-            $loader->prefixDirsPsr4 = ComposerStaticInita3d675540e6e970dc31c4faf600d6eb0::$prefixDirsPsr4;
-            $loader->classMap = ComposerStaticInita3d675540e6e970dc31c4faf600d6eb0::$classMap;
+            $loader->prefixLengthsPsr4 = ComposerStaticInitf6e1557513b25646ab1b95c528dcf2b9::$prefixLengthsPsr4;
+            $loader->prefixDirsPsr4 = ComposerStaticInitf6e1557513b25646ab1b95c528dcf2b9::$prefixDirsPsr4;
+            $loader->classMap = ComposerStaticInitf6e1557513b25646ab1b95c528dcf2b9::$classMap;
 
         }, null, ClassLoader::class);
     }

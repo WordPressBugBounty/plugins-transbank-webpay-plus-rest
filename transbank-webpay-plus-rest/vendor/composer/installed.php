@@ -1,9 +1,9 @@
 <?php return array(
     'root' => array(
         'name' => 'transbank/woocommerce-plugin',
-        'pretty_version' => '1.12.0',
-        'version' => '1.12.0.0',
-        'reference' => '12b0906560a96f3f575e4f96ea53c1fda086358b',
+        'pretty_version' => '1.12.2',
+        'version' => '1.12.2.0',
+        'reference' => '69f3119e1942ac2c3c07026a48356ccc96768fbe',
         'type' => 'library',
         'install_path' => __DIR__ . '/../../',
         'aliases' => array(),
@@ -134,9 +134,9 @@
             'dev_requirement' => false,
         ),
         'transbank/woocommerce-plugin' => array(
-            'pretty_version' => '1.12.0',
-            'version' => '1.12.0.0',
-            'reference' => '12b0906560a96f3f575e4f96ea53c1fda086358b',
+            'pretty_version' => '1.12.2',
+            'version' => '1.12.2.0',
+            'reference' => '69f3119e1942ac2c3c07026a48356ccc96768fbe',
             'type' => 'library',
             'install_path' => __DIR__ . '/../../',
             'aliases' => array(),

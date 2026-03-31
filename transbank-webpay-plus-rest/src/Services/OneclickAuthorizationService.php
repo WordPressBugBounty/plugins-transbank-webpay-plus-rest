@@ -2,12 +2,12 @@
 
 namespace Transbank\WooCommerce\WebpayRest\Services;
 
-use Transbank\Webpay\Oneclick;
-use Transbank\Webpay\Options;
+use TransbankVendor\Transbank\Webpay\Oneclick;
+use TransbankVendor\Transbank\Webpay\Options;
 use Transbank\Plugin\Model\TbkTransaction;
 use Transbank\Plugin\Helpers\TbkConstants;
 use Transbank\Plugin\Helpers\BuyOrderHelper;
-use Transbank\Webpay\Oneclick\MallTransaction;
+use TransbankVendor\Transbank\Webpay\Oneclick\MallTransaction;
 
 class OneclickAuthorizationService extends ProductBaseService
 {
@@ -53,10 +53,10 @@ class OneclickAuthorizationService extends ProductBaseService
      * @param $childBuyOrder
      * @param $amount
      *
-     * @throws \Transbank\Webpay\Oneclick\Exceptions\MallTransactionAuthorizeException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws TransbankVendor\Transbank\Webpay\Oneclick\Exceptions\MallTransactionAuthorizeException
+     * @throws TransbankVendor\GuzzleHttp\Exception\GuzzleException
      *
-     * @return \Transbank\Webpay\Oneclick\Responses\MallTransactionAuthorizeResponse
+     * @return TransbankVendor\Transbank\Webpay\Oneclick\Responses\MallTransactionAuthorizeResponse
      */
     public function authorize($username, $tbkUser, $parentBuyOrder, $childBuyOrder, $amount)
     {
@@ -74,10 +74,10 @@ class OneclickAuthorizationService extends ProductBaseService
     /**
      * @param $buyOrder
      *
-     * @throws \Transbank\Webpay\Oneclick\Exceptions\MallTransactionStatusException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws TransbankVendor\Transbank\Webpay\Oneclick\Exceptions\MallTransactionStatusException
+     * @throws TransbankVendor\GuzzleHttp\Exception\GuzzleException
      *
-     * @return \Transbank\Webpay\Oneclick\Responses\MallTransactionStatusResponse
+     * @return TransbankVendor\Transbank\Webpay\Oneclick\Responses\MallTransactionStatusResponse
      */
     public function status($buyOrder)
     {
@@ -88,10 +88,10 @@ class OneclickAuthorizationService extends ProductBaseService
      * @param $token
      * @param $amount
      *
-     * @throws \Transbank\Webpay\Oneclick\Exceptions\MallRefundTransactionException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws TransbankVendor\Transbank\Webpay\Oneclick\Exceptions\MallRefundTransactionException
+     * @throws TransbankVendor\GuzzleHttp\Exception\GuzzleException
      * 
-     * @return \Transbank\Webpay\Oneclick\Responses\MallTransactionRefundResponse
+     * @return TransbankVendor\Transbank\Webpay\Oneclick\Responses\MallTransactionRefundResponse
      */
     public function refund($buyOrder, $childCommerceCode, $childBuyOrder, $amount)
     {

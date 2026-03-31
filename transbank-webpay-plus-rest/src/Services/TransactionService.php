@@ -5,9 +5,9 @@ namespace Transbank\WooCommerce\WebpayRest\Services;
 use Transbank\WooCommerce\WebpayRest\Repositories\TransactionRepository;
 use Transbank\Plugin\Helpers\TbkConstants;
 use Transbank\Plugin\Model\TbkTransaction;
-use Transbank\Webpay\Oneclick\Responses\MallTransactionAuthorizeResponse;
-use Transbank\Webpay\WebpayPlus\Responses\TransactionRefundResponse;
-use Transbank\Webpay\Oneclick\Responses\MallTransactionRefundResponse;
+use TransbankVendor\Transbank\Webpay\Oneclick\Responses\MallTransactionAuthorizeResponse;
+use TransbankVendor\Transbank\Webpay\WebpayPlus\Responses\TransactionRefundResponse;
+use TransbankVendor\Transbank\Webpay\Oneclick\Responses\MallTransactionRefundResponse;
 use Transbank\Plugin\Exceptions\DatabaseRecordCreationException;
 use Transbank\Plugin\Exceptions\RecordNotFoundOnDatabaseException;
 

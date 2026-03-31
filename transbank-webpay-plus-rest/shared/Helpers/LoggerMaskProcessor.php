@@ -1,7 +1,7 @@
 <?php
 namespace Transbank\Plugin\Helpers;
 
-use Monolog\LogRecord;
+use TransbankVendor\Monolog\LogRecord;
 
 class LoggerMaskProcessor
 {

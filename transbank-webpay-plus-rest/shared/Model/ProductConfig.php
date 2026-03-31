@@ -1,7 +1,7 @@
 <?php
 
 namespace Transbank\Plugin\Model;
-use Transbank\Webpay\Options;
+use TransbankVendor\Transbank\Webpay\Options;
 
 abstract class ProductConfig {
     public $apikey = null;

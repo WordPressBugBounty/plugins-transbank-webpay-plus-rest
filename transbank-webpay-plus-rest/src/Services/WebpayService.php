@@ -2,15 +2,15 @@
 
 namespace Transbank\WooCommerce\WebpayRest\Services;
 
-use GuzzleHttp\Exception\GuzzleException;
+use TransbankVendor\GuzzleHttp\Exception\GuzzleException;
 use Transbank\Plugin\Exceptions\Webpay\CommitWebpayException;
 use Transbank\Plugin\Exceptions\Webpay\CreateWebpayException;
-use Transbank\Webpay\Options;
-use Transbank\Webpay\WebpayPlus\Responses\TransactionCommitResponse;
-use Transbank\Webpay\WebpayPlus\Transaction as WebpayPlusTransaction;
-use Transbank\Webpay\WebpayPlus\Exceptions\TransactionCommitException;
-use Transbank\Webpay\WebpayPlus\Exceptions\TransactionCreateException;
-use Transbank\Webpay\WebpayPlus;
+use TransbankVendor\Transbank\Webpay\Options;
+use TransbankVendor\Transbank\Webpay\WebpayPlus\Responses\TransactionCommitResponse;
+use TransbankVendor\Transbank\Webpay\WebpayPlus\Transaction as WebpayPlusTransaction;
+use TransbankVendor\Transbank\Webpay\WebpayPlus\Exceptions\TransactionCommitException;
+use TransbankVendor\Transbank\Webpay\WebpayPlus\Exceptions\TransactionCreateException;
+use TransbankVendor\Transbank\Webpay\WebpayPlus;
 use Transbank\Plugin\Model\TbkTransaction;
 use Transbank\Plugin\Helpers\BuyOrderHelper;
 use Transbank\Plugin\Helpers\TbkConstants;
@@ -92,7 +92,7 @@ class WebpayService extends ProductBaseService
      *
      * @throws CommitWebpayException
      *
-     * @return \Transbank\Webpay\WebpayPlus\Responses\TransactionCommitResponse
+     * @return TransbankVendor\Transbank\Webpay\WebpayPlus\Responses\TransactionCommitResponse
      */
     public function commitTransaction(string $token): TransactionCommitResponse
     {
@@ -110,10 +110,10 @@ class WebpayService extends ProductBaseService
     /**
      * @param $token
      *
-     * @throws \Transbank\Webpay\WebpayPlus\Exceptions\TransactionStatusException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws TransbankVendor\Transbank\Webpay\WebpayPlus\Exceptions\TransactionStatusException
+     * @throws TransbankVendor\GuzzleHttp\Exception\GuzzleException
      *
-     * @return \Transbank\Webpay\WebpayPlus\Responses\TransactionStatusResponse
+     * @return TransbankVendor\Transbank\Webpay\WebpayPlus\Responses\TransactionStatusResponse
      */
     public function status($token)
     {
@@ -124,9 +124,9 @@ class WebpayService extends ProductBaseService
      * @param $token
      * @param $amount
      *
-     * @throws \Transbank\Webpay\WebpayPlus\Exceptions\TransactionRefundException
+     * @throws TransbankVendor\Transbank\Webpay\WebpayPlus\Exceptions\TransactionRefundException
      *
-     * @return \Transbank\Webpay\WebpayPlus\Responses\TransactionRefundResponse
+     * @return TransbankVendor\Transbank\Webpay\WebpayPlus\Responses\TransactionRefundResponse
      */
     public function refund($token, $amount)
     {

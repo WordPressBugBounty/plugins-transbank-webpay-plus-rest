@@ -4,8 +4,8 @@ namespace Transbank\WooCommerce\WebpayRest\Controllers;
 
 use WC_Order;
 use Transbank\WooCommerce\WebpayRest\Helpers\TbkFactory;
-use Transbank\Webpay\Oneclick\Exceptions\InscriptionStartException;
-use Transbank\Webpay\Oneclick\Responses\InscriptionStartResponse;
+use TransbankVendor\Transbank\Webpay\Oneclick\Exceptions\InscriptionStartException;
+use TransbankVendor\Transbank\Webpay\Oneclick\Responses\InscriptionStartResponse;
 use Transbank\WooCommerce\WebpayRest\Services\InscriptionService;
 use Transbank\WooCommerce\WebpayRest\Services\OneclickInscriptionService;
 use Transbank\Plugin\Helpers\PluginLogger;
@@ -31,7 +31,7 @@ class StartOneclickController
     }
 
     /**
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws TransbankVendor\GuzzleHttp\Exception\GuzzleException
      * @throws InscriptionStartException
      */
     public function process(): bool
@@ -45,7 +45,7 @@ class StartOneclickController
      * @param int $orderId
      * @param string   $from
      *
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws TransbankVendor\GuzzleHttp\Exception\GuzzleException
      * @throws InscriptionStartException
      *
      * @return InscriptionStartResponse

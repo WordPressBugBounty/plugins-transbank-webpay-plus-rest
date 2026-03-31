@@ -2,9 +2,9 @@
 
 namespace Transbank\WooCommerce\WebpayRest\Services;
 
-use Transbank\Webpay\Oneclick\MallInscription;
-use Transbank\Webpay\Oneclick;
-use Transbank\Webpay\Options;
+use TransbankVendor\Transbank\Webpay\Oneclick\MallInscription;
+use TransbankVendor\Transbank\Webpay\Oneclick;
+use TransbankVendor\Transbank\Webpay\Options;
 use Transbank\Plugin\Model\TbkInscription;
 use Transbank\Plugin\Helpers\TbkConstants;
 use Transbank\Plugin\Exceptions\EcommerceException;
@@ -47,10 +47,10 @@ class OneclickInscriptionService extends ProductBaseService
      * @param $email
      * @param $returnUrl
      *
-     * @throws \Transbank\Webpay\Oneclick\Exceptions\InscriptionStartException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws TransbankVendor\Transbank\Webpay\Oneclick\Exceptions\InscriptionStartException
+     * @throws TransbankVendor\GuzzleHttp\Exception\GuzzleException
      *
-     * @return \Transbank\Webpay\Oneclick\Responses\InscriptionStartResponse
+     * @return TransbankVendor\Transbank\Webpay\Oneclick\Responses\InscriptionStartResponse
      */
     public function startInscription($userName, $email, $returnUrl)
     {
@@ -62,10 +62,10 @@ class OneclickInscriptionService extends ProductBaseService
      * @param $userName
      * @param $email
      *
-     * @throws \Transbank\Webpay\Oneclick\Exceptions\InscriptionFinishException
-     * @throws \GuzzleHttp\Exception\GuzzleException
+     * @throws TransbankVendor\Transbank\Webpay\Oneclick\Exceptions\InscriptionFinishException
+     * @throws TransbankVendor\GuzzleHttp\Exception\GuzzleException
      *
-     * @return \Transbank\Webpay\Oneclick\Responses\InscriptionFinishResponse
+     * @return TransbankVendor\Transbank\Webpay\Oneclick\Responses\InscriptionFinishResponse
      */
     public function finishInscription($token)
     {

@@ -7,7 +7,7 @@ use DateTimeZone;
 use WC_Order;
 use Transbank\WooCommerce\WebpayRest\Helpers\HposHelper;
 use Transbank\WooCommerce\WebpayRest\Helpers\TbkResponseUtil;
-use Transbank\Webpay\WebpayPlus\Responses\TransactionCommitResponse;
+use TransbankVendor\Transbank\Webpay\WebpayPlus\Responses\TransactionCommitResponse;
 use Transbank\Plugin\Model\WebpayplusConfig;
 use Transbank\Plugin\Model\OneclickConfig;
 

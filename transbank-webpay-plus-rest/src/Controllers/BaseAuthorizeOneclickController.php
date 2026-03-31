@@ -6,7 +6,7 @@ use WC_Order;
 use Transbank\Plugin\Exceptions\EcommerceException;
 use Transbank\WooCommerce\WebpayRest\Helpers\TbkFactory;
 use Transbank\WooCommerce\WebpayRest\Helpers\TbkResponseUtil;
-use Transbank\Webpay\Oneclick\Responses\MallTransactionAuthorizeResponse;
+use TransbankVendor\Transbank\Webpay\Oneclick\Responses\MallTransactionAuthorizeResponse;
 use Transbank\WooCommerce\WebpayRest\Services\TransactionService;
 use Transbank\WooCommerce\WebpayRest\Services\OneclickAuthorizationService;
 use Transbank\Plugin\Helpers\PluginLogger;

@@ -2,9 +2,9 @@
 
 namespace Transbank\WooCommerce\WebpayRest\Setup;
 
-use Transbank\Webpay\Oneclick;
-use Transbank\Webpay\Options;
-use Transbank\Webpay\WebpayPlus;
+use TransbankVendor\Transbank\Webpay\Oneclick;
+use TransbankVendor\Transbank\Webpay\Options;
+use TransbankVendor\Transbank\Webpay\WebpayPlus;
 use Transbank\WooCommerce\WebpayRest\Config\TransbankGatewayIds;
 use Transbank\WooCommerce\WebpayRest\Config\TransbankGatewaySettings;
 

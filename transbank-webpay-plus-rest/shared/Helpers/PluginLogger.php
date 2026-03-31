@@ -3,9 +3,9 @@
 namespace Transbank\Plugin\Helpers;
 
 use DateTimeZone;
-use Monolog\Logger;
-use Monolog\Handler\RotatingFileHandler;
-use Monolog\Formatter\LineFormatter;
+use TransbankVendor\Monolog\Logger;
+use TransbankVendor\Monolog\Handler\RotatingFileHandler;
+use TransbankVendor\Monolog\Formatter\LineFormatter;
 use Transbank\Plugin\Model\LogConfig;
 
 final class PluginLogger

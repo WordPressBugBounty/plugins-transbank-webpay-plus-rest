@@ -2,7 +2,7 @@
 
 namespace Transbank\WooCommerce\WebpayRest\Services;
 
-use Transbank\Webpay\Options;
+use TransbankVendor\Transbank\Webpay\Options;
 use Transbank\Plugin\Helpers\BuyOrderHelper;
 
 class ProductBaseService

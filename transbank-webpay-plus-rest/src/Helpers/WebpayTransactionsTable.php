@@ -4,7 +4,7 @@ namespace Transbank\WooCommerce\WebpayRest\Helpers;
 
 use DateTime;
 use DateTimeZone;
-use Transbank\Webpay\Options;
+use TransbankVendor\Transbank\Webpay\Options;
 use Transbank\Plugin\Helpers\TbkConstants;
 use Transbank\WooCommerce\WebpayRest\Helpers\TbkResponseUtil;
 use WP_List_Table;

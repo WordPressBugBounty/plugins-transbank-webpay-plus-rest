@@ -3,7 +3,7 @@
 namespace Transbank\WooCommerce\WebpayRest\Services;
 
 use Transbank\WooCommerce\WebpayRest\Repositories\InscriptionRepository;
-use Transbank\Webpay\Oneclick\Responses\InscriptionFinishResponse;
+use TransbankVendor\Transbank\Webpay\Oneclick\Responses\InscriptionFinishResponse;
 use Transbank\Plugin\Helpers\TbkConstants;
 use Transbank\Plugin\Model\TbkInscription;
 use Transbank\Plugin\Exceptions\DatabaseRecordCreationException;

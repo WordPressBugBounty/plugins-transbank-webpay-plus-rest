@@ -6,7 +6,7 @@ use Transbank\WooCommerce\WebpayRest\Services\WebpayService;
 use Transbank\Plugin\Helpers\PluginLogger;
 use Transbank\Plugin\Helpers\TbkConstants;
 use Transbank\Plugin\Exceptions\EcommerceException;
-use Transbank\Webpay\WebpayPlus\Responses\TransactionCommitResponse;
+use TransbankVendor\Transbank\Webpay\WebpayPlus\Responses\TransactionCommitResponse;
 use Transbank\WooCommerce\WebpayRest\Helpers\TbkFactory;
 use Transbank\WooCommerce\WebpayRest\Services\EcommerceService;
 use Transbank\WooCommerce\WebpayRest\Services\TransactionService;

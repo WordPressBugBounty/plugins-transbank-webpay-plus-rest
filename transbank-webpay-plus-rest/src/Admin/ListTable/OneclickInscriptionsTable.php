@@ -2,7 +2,7 @@
 
 namespace Transbank\WooCommerce\WebpayRest\Admin\ListTable;
 
-use Transbank\Webpay\Options;
+use TransbankVendor\Transbank\Webpay\Options;
 use Transbank\WooCommerce\WebpayRest\Helpers\TbkFactory;
 use Transbank\Plugin\Helpers\ExitHelper;
 use WP_List_Table;

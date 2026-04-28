@@ -38,7 +38,7 @@ if (!defined('ABSPATH')) {
  * Plugin Name: Transbank Webpay
  * Plugin URI: https://www.transbankdevelopers.cl/plugin/woocommerce/webpay
  * Description: Recibe pagos en línea con Tarjetas de Crédito y Redcompra en tu WooCommerce a través de Webpay Plus y Webpay Oneclick.
- * Version: 1.13.0
+ * Version: 1.14.0
  * Requires Plugins: woocommerce
  * Author: TransbankDevelopers
  * Author URI: https://www.transbank.cl

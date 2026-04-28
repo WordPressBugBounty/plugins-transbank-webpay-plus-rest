@@ -4,7 +4,7 @@ Tags: transbank, webpay_plus, webpay_oneclick
 Requires at least: 6.3
 Tested up to: 6.9.4
 Requires PHP: 8.2
-Stable tag: 1.13.0
+Stable tag: 1.14.0
 License: 3-Clause BSD License
 License URI: https://opensource.org/licenses/BSD-3-Clause
 
@@ -59,6 +59,17 @@ Transforma tu eCommerce con el plugin oficial de Transbank y dale a tus clientes
 4. Página de logs
 
 == Changelog ==
+= 1.14.0 =
+
+Esta versión no tiene cambios en el comportamiento de las funcionalidades de la API.
+
+
+__Actualiza:__
+
+* Se refina el proceso de empaquetado del plugin para evitar conflictos con plugins de terceros.
+* Se refina el proceso de logging para el flujo de pago de Webpay Plus y Webpay Oneclick.
+* Se actualizan las capturas e instrucciones de instalación del repositorio.
+
 = 1.13.0 =
 
 Esta versión no tiene cambios en el comportamiento de las funcionalidades de la API.
@@ -185,6 +196,17 @@ Esta versión no tiene cambios en el comportamiento de las funcionalidades de la
 
 
 == Upgrade Notice ==
+= 1.14.0 =
+
+Esta versión no tiene cambios en el comportamiento de las funcionalidades de la API.
+
+
+__Actualiza:__
+
+* Se refina el proceso de empaquetado del plugin para evitar conflictos con plugins de terceros.
+* Se refina el proceso de logging para el flujo de pago de Webpay Plus y Webpay Oneclick.
+* Se actualizan las capturas e instrucciones de instalación del repositorio.
+
 = 1.13.0 =
 
 Esta versión no tiene cambios en el comportamiento de las funcionalidades de la API.

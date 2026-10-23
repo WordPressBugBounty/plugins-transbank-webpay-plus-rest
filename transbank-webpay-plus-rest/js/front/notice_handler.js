@@ -1,1 +1,0 @@
-(()=>{"use strict";const a=new URL(window.location.href);new URLSearchParams(a.search).has("transbank_status")})();
